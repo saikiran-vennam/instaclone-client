@@ -1,0 +1,213 @@
+.App {
+  text-align: center;
+}
+
+.Load {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  font-size: 50px;
+}
+.headerMain {
+  display: flex;
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid black;
+  margin-top: 5px;
+  border-top: 1px solid gray;
+  padding: 5px;
+  margin-bottom: 30px;
+}
+
+.imageIcon {
+  display: flex;
+  align-items: center;
+  margin-left: 4%;
+}
+
+.imageIcon img{
+  width: 50px;
+  margin-right: 5%;
+  cursor: pointer;
+}
+
+.iconName {
+  font-family: 'Brush Script MT', cursive;
+  font-weight: 500;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.cam {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.cam img {
+  width: 60px;
+  margin-right: 6%;
+  cursor: pointer;
+}
+
+.WholePost {
+  text-align: left;
+  justify-content: center;
+  width: 550px;
+  height: auto;
+  margin-left: 30%;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  border: 1px solid rgb(186, 185, 185);
+  box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.postTop {
+  display: flex;
+  height: auto;
+  padding: 5px 5px 0px 10px;
+  border-bottom: 1px solid rgb(218, 217, 217);
+
+}
+
+.Name {
+  font-weight: 700;
+  margin-bottom: 2px;
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: 2.5px;
+}
+
+.NameLoc {
+  width: 300px;
+}
+
+.Loc {
+  font-size: 14px;
+  color: gray;
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.dots {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  margin-right: 10px;
+}
+
+.dots img {
+  width: 50px;
+  cursor: pointer;
+}
+
+.postMid img {
+  width: 100%;
+  max-height: 290px;
+}
+
+
+.likeSendDate {
+  display: flex;
+  margin-top: 5px;
+  padding: 2px;
+}
+
+.likeSend {
+  display: flex;
+}
+
+.likeSend img {
+  width: 25px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.Date {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  margin-right: 15px;
+  color: rgb(95, 95, 95);
+}
+
+.likesNum {
+  display: flex;
+  color: grey;
+  margin-left: 10px;
+  font-size: 15px;
+}
+
+.likesNum div {
+  margin-left: 5px;
+}
+
+.disc {
+  margin-left: 15px;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+
+
+
+
+/* CSS */
+.button-27 {
+  appearance: none;
+  background-color: #000000;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+  will-change: transform;
+}
+
+.button-27:disabled {
+  pointer-events: none;
+}
+
+.button-27:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button-27:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.noposts {
+  font-size: 30px;
+  color: rgb(4, 4, 83);
+  margin-bottom: 50px;
+}
+
+.note {
+  color: red;
+  font-size: 20px;
+}
