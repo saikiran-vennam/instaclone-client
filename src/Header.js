@@ -10,8 +10,7 @@ function Header() {
                 <div className='iconName'>Instaclone</div>
             </div>
             <div className='cam'>
-                <Link to="/posting" ><button class="button-27" >Add Post</button></Link>
-                <img src={Cam} alt="Cam" />
+             <Link to='/posting' > <img src={Cam} alt="Cam" /> </Link>
             </div>
         </div>
     )
