@@ -35,17 +35,21 @@ input[type="file"]::-webkit-file-upload-button {
 }
 
 .aut input, .loc input{
-    height: 40px;
+    height: 30px;
     width: 90%;
     margin-top: 10px;
     font-size: 20px;
+    border-radius: 3px;
+    border: 1.5px solid rgb(112, 112, 112);
 }
 
 .bot input {
     width: 99%;
-    height: 40px;
-    margin-top: 15px;
+    height: 35px;
+    margin-top: 20px;
     font-size: 20px;
+    border-radius: 3px;
+    border: 1.5px solid rgb(112, 112, 112);
 }
 
 .posting {
@@ -55,6 +59,7 @@ input[type="file"]::-webkit-file-upload-button {
     background-color: #FFFFFF;
     margin-top: 30px;
     box-shadow: 8px 8px 8px 8px rgba(0.2, 0.2, 0.2, 0.2);
+    border-radius: 8px;
 }
 
 .main5 {
@@ -70,6 +75,7 @@ input[type="file"]::-webkit-file-upload-button {
     margin-top: 30px;
     font-size: 18px;
     font-weight: 550;
+    border-radius: 5px;
 }
 .adding:enabled {
     width: 18%;
@@ -81,4 +87,26 @@ input[type="file"]::-webkit-file-upload-button {
     cursor: pointer;
     font-size: 18px;
     font-weight:550;
+}
+
+label {
+    border: 1px solid black;
+    background-color: #010828;
+    height: 30px;
+    padding: 5px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+p {
+    border: 1px solid black;
+    width: 280px;
+    height: 30px;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
