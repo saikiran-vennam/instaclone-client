@@ -9,9 +9,8 @@ function Posting() {
     const [author, setAuthor] = useState('');
     const [location, setLocation] = useState('');
     const [description, setDescription] = useState('');
-    const handleImage = (event) => {
-        setImage(event.target.files[0])
-    }
+    const [fileName, setFileName] = useState('');
+    
     const handleAuth = (event) => {
         setAuthor(event.target.value)
     }
@@ -29,13 +28,11 @@ function Posting() {
         post.append('author', author)
         post.append('location', location)
         post.append('description', description)
-        alert("Please wait");
+        alert("Please Wait...")
         await axios.post("https://instaclone-serving.herokuapp.com/post", post)
         .then(res => alert(res.data.message));
         history('/InstaPage');
     }
-
-    
 
     
     return (
@@ -43,9 +40,16 @@ function Posting() {
         <Header/>
         <div className='main5'>
         <div className="posting">
-            <div className='top'> 
-                <input className='filed' type="file" name="image" accept="image/*" onChange={handleImage} required/>
-            </div>
+        <div className='top'>
+        <input onChange={(e) => {
+                        setFileName(e.target.value.split("\\").pop())
+                        setImage(e.target.files[0])
+                    }
+                    }
+                        type="file" name="PostImage" id="file" class="inputfile" style={{ display: "none" }} />
+                    <p  style={{ display: 'inline-block' }} >{fileName}</p> &nbsp;&nbsp;
+                    <label style={{ display: 'inline-block' }} for="file">Browse</label>
+                </div>
             <div className='middle'>
                 <div className='aut'>
                     <input type='text' name='author' placeholder='Author' value={author} onChange={handleAuth} required/>
