@@ -29,7 +29,7 @@ function Posting() {
         post.append('author', author)
         post.append('location', location)
         post.append('description', description)
-        history('/InstaPage');
+        alert("Please wait");
         await axios.post("https://instaclone-serving.herokuapp.com/post", post)
         .then(res => alert(res.data.message));
         history('/InstaPage');
@@ -58,7 +58,7 @@ function Posting() {
                 <input type='text' name='description' placeholder='Description' value={description} onChange={handleDesc} required/>
             </div>
             <div>
-                <button className='adding' onClick={posted}  disabled={!(image && author && location && description)}> post </button>
+                <button className='adding' onClick={posted}  disabled={!(image && author && location && description)}> Post </button>
             </div>
         </div>
         </div>
