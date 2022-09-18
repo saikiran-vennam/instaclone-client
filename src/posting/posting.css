@@ -65,16 +65,20 @@ input[type="file"]::-webkit-file-upload-button {
 }
 
 .adding {
-    width: 15%;
-    height: 30px;
+    width: 18%;
+    height: 40px;
     margin-top: 30px;
+    font-size: 18px;
+    font-weight: 550;
 }
 .adding:enabled {
-    width: 15%;
+    width: 18%;
     height: 40px;
     margin-top: 30px;
     background-color: rgb(62, 244, 195);
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 18px;
+    font-weight:550;
 }
