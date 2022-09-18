@@ -53,6 +53,11 @@
   cursor: pointer;
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+}
+
 .WholePost {
   text-align: left;
   justify-content: center;
