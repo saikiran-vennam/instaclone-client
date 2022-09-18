@@ -9,7 +9,7 @@ function Posting() {
     const [author, setAuthor] = useState('');
     const [location, setLocation] = useState('');
     const [description, setDescription] = useState('');
-    const [fileName, setFileName] = useState('');
+    const [fileName, setFileName] = useState('No file choosen');
     
     const handleAuth = (event) => {
         setAuthor(event.target.value)
